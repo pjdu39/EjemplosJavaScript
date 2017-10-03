@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <script>
+            //function cambiaCabecera(){
+            //    document.getElementById('cabecera').innerHTML = 'Este es el ejercicio 2';
+                
+            //}
+            function ejemploFor(){
+                for (var i=0; i<20; i++){
+                    document.write(i + " ");
+                }
+                for( var i=0; i<6; i++){
+                    document.write("<h" + i + ">Esto es una cabecera de nivel" + i + "</h>");
+                }
+            }
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <input type="submit" value="Ejemplo4" name="boton1" onclick="ejemploFor();"/>
+            <h1 id="cabecera"></h1>
+        </div>
+    </body>
+</html>

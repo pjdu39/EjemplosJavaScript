@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <script>
+            
+            var ejemploObjeto = {
+                propiedad1 : "valor1",
+                propiedad2 : 1500,
+                metodo1 : function(){
+                    console.log("Este es el ejemplo 1");
+                },
+                metodo2 : function(){
+                    console.log("Este es el ejemplo 2");
+                }
+            }
+            ejemploObjeto.metodo1();
+            ejemploObjeto.metodo2();
+            
+            var familia = {
+                nombre: "Stark",
+                castillo:{
+                    nombre: "Invernalia",
+                    gobierno:{
+                        lord: "Ned Stark",
+                        lady: "Catelyn Stark"
+                    },
+                    lema: "se acerca el invierno"
+                },
+                hijos:[
+                    {edad: 14, nombre: "Robb Stark"},
+                    {edad: 14, nombre: "John Snow"},
+                    {edad: 11, nombre: "Sansa Stark"},
+                    {edad: 19, nombre: "Arya Stark"},
+                    {edad: 7, nombre: "Bran Stark"},
+                    {edad: 3, nombre: "Rickon Stark"}
+                ],
+                fundador: function(){
+                    document.write("Brandon el constructor");
+                },
+                listado: function(){
+                    for(var i in this.hijos){
+                        document.write(this.hijos[i].nombre + "edad:" + this.hijos[i].edad + "<br>");
+                    }
+                }
+                    
+            };
+            
+            console.log(familia.castillo.gobierno.lord);
+            
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <input type="submit" value="Ejemplo Funciones" name="boton1" onclick="familia.listado();"/>
+            <h1 id="cabecera"></h1>
+        </div>
+    </body>
+</html>
